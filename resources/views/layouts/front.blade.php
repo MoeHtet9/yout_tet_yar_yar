@@ -3,24 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ရောက်တက်ရာရာ</title>
+        <title>Yout Tet Yar Yar</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="{{asset('front-asset/css/style.css')}}">
         <link rel="stylesheet" href="{{asset('front-asset/css/note.css')}}">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+        <nav class="navbar navbar-expand-lg bg-light shadow">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="#">ရောက်တက်ရာရာ</a>
+                <h2><i class="fa-solid fa-feather-pointed text-warning"></i></h2>
+                <a class="navbar-brand text-dark">
+                    <div class="waviy">
+                        <span style="--i:5"></span>
+                        <span style="--i:1">Y</span>
+                        <span style="--i:2">o</span>
+                        <span style="--i:3">u</span>
+                        <span style="--i:4">t</span>
+                        <span style="--i:5"></span>
+                        <span style="--i:6">T</span>
+                        <span style="--i:7">e</span>
+                        <span style="--i:8">t</span>
+                        <span style="--i:9"></span>
+                        <span style="--i:10">Y</span>
+                        <span style="--i:11">a</span>
+                        <span style="--i:12">r</span>
+                        <span style="--i:13"></span>
+                        <span style="--i:10">Y</span>
+                        <span style="--i:11">a</span>
+                        <span style="--i:12">r</span>
+                    </div>
+                </a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="nav">
+                <div class="collapse navbar-collapse wave" id="nav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Books</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Knowledge</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Short Notes</a></li>
+                        <h5 class="nav-item"><a class="nav-link active" href="#"><i class="fa-brands fa-telegram"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-github text-dark"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-tiktok text-danger"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-facebook text-primary"></i></a></h5>
                     </ul>
                 </div>
             </div>

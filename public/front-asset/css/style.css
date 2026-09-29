@@ -1,7 +1,41 @@
-body{background:#f8fbff;font-family:sans-serif}
+body{background:#cbe2f3;font-family:sans-serif}
 .nav-link:hover,.active{color:#4A90E2!important}
-.card{border:none;border-radius:18px;box-shadow:0 4px 15px #00000010;transition:.3s}
+.card{border:none;border-radius:18px;box-shadow:0 4px 15px #a1bbd3;transition:.3s}
 .card:hover{transform:translateY(-5px)}
 .tag{background:#EAF3FF;color:#4A90E2;padding:4px 10px;border-radius:20px;font-size:12px}
 .btn-primary{background:#4A90E2;border:none}
 .btn-primary:hover{background:#357bd8}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+.list{
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 350px;
+}
+
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.45)),
+        url("../bg1.jpg") center bottom/cover no-repeat;
+    display:flex;
+}
+
+.image{
+  height: 200px;
+}
