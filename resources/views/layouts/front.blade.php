@@ -13,7 +13,7 @@
         <nav class="navbar navbar-expand-lg bg-light shadow">
             <div class="container">
                 <h2><i class="fa-solid fa-feather-pointed text-warning"></i></h2>
-                <a class="navbar-brand text-dark">
+                <a class="navbar-brand text-dark" href="{{route('front-index')}}">
                     <div class="waviy">
                         <span style="--i:5"></span>
                         <span style="--i:1">Y</span>

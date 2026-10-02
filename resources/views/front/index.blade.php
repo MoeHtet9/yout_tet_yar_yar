@@ -28,113 +28,55 @@
                     <section class="container pb-5">
                         <div class="row g-3">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
+                                @foreach($posts as $post)
+                                @if($post->category_id == 1)
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="{{$post->image}}" class="card-img-top image" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-warning">{{$post->title}}</h3>
+                                                <p class="card-text">{{Str::limit($post->description, 100)}}</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="{{route('front-detail', ['id' => $post->id, 'category_id' => $post->category_id])}}" class="btn btn-primary">Read More..</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                @endif
+                                @endforeach
                             </div>
                         </div>
                     </section>
+                    {{$posts->links()}}
                 </div>
                 <div class="tab-pane fade" id="2-tab-pane" role="tabpanel" aria-labelledby="2-tab" tabindex="0">
                     <section class="container pb-5">
                         <div class="row g-3">
                             <div class="row row-cols-1 row-cols-md-3 g-4">
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                               <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
+                                @foreach($posts as $post)
+                                @if($post->category_id == 2)
+
+                                    <div class="col">
+                                        <div class="card h-100">
+                                            <img src="{{$post->image}}" class="card-img-top image" alt="...">
+                                            <div class="card-body">
+                                                <h3 class="card-title text-warning">{{$post->title}}</h3>
+                                                <p class="card-text">{{Str::limit($post->description, 100)}}</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="{{route('front-detail', ['id' => $post->id, 'category_id' => $post->category_id])}}" class="btn btn-primary">Read More..</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                               <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="card h-100">
-                                        <img src="{{asset('front-asset/note1.jpg')}}" class="card-img-top image" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="detail/1" class="btn btn-primary">Read More..</a>
-                                        </div>
-                                    </div>
-                                </div>
+
+                                @endif
+                                @endforeach
                             </div>
                         </div>
                     </section>
+                    {{$posts->links()}}
                 </div>
             </div>
         </div>
