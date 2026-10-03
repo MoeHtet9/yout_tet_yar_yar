@@ -39,10 +39,10 @@
                 </button>
                 <div class="collapse navbar-collapse wave" id="nav">
                     <ul class="navbar-nav ms-auto">
-                        <h5 class="nav-item"><a class="nav-link active" href="#"><i class="fa-brands fa-telegram"></i></a></h5>
-                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-github text-dark"></i></a></h5>
-                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-tiktok text-danger"></i></a></h5>
-                        <h5 class="nav-item"><a class="nav-link" href="#"><i class="fa-brands fa-facebook text-primary"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link active" href="https://t.me/MoeHtetr" target="_blank"><i class="fa-brands fa-telegram"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="https://github.com/MoeHtetr" target="_blank"><i class="fa-brands fa-github text-dark"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="https://www.tiktok.com/@moehtet_moehtet?_r=1&_t=ZS-9ADOxqgSJFc" target="_blank"><i class="fa-brands fa-tiktok text-danger"></i></a></h5>
+                        <h5 class="nav-item"><a class="nav-link" href="https://www.facebook.com/share/14pQM6nwMvx/" target="_blank"><i class="fa-brands fa-facebook text-primary"></i></a></h5>
                     </ul>
                 </div>
             </div>

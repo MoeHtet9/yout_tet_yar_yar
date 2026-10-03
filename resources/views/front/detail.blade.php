@@ -26,12 +26,12 @@
                                             <div class="card mb-3 p-2 posts-list">
                                                 <div class="row g-0">
                                                     <div class="col-md-4">
-                                                    <img src="{{$post_category->image}}" class="img-fluid rounded-start" alt="...">
+                                                        <img src="{{$post_category->image}}" class="img-fluid rounded-start" alt="...">
                                                     </div>
                                                     <div class="col-md-8">
-                                                    <div class="card-body">
-                                                        <p class="card-title">{{$post_category->title}}</p>
-                                                    </div>
+                                                        <div class="card-body">
+                                                            <p class="card-title">{{$post_category->title}}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
