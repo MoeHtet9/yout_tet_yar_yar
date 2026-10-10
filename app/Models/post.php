@@ -13,7 +13,7 @@ class post extends Model
     use HasFactory;
 
     protected $table = 'posts';
-    protected $filable = [
+    protected $fillable = [
         'title',
         'description',
         'image',

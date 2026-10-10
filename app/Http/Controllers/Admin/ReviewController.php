@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Review;
+use App\Http\Requests\ReviewRequest;
 class ReviewController extends Controller
 {
     /**
@@ -27,9 +28,12 @@ class ReviewController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ReviewRequest $request)
     {
-        //
+        // dd($request);
+        $review = Review::create($request->all());
+
+        return redirect()->back();
     }
 
     /**

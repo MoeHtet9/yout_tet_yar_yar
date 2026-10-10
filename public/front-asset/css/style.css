@@ -25,7 +25,7 @@ body{background:#cbe2f3;font-family:sans-serif}
 .list{
   overflow-y: auto;
   overflow-x: hidden;
-  height: 350px;
+  height: 100vh;
 }
 
 .hero{

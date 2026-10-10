@@ -4,21 +4,30 @@
             <div class="col-lg-12 my-5">
                 <div class="row">
                     <div class="card col-lg-8 me-5">
-                        <img src="{{asset('front-asset/images/note.png')}}" class="card-img-top" alt="..." height="200px">
+                        <img src="{{$post->image}}" class="card-img-top" alt="..." height="auto">
                         <div class="card-body">
-                            <h5 class="card-title">{{$post->title}}</h5>
+                            <h4 class="card-title">{{$post->title}}</h4>
+                            <br>
                             <p class="card-text">{{$post->description}}</p>
                             <hr>
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Review</label>
-                                <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                <button class="btn btn-primary container">Send</button>
+                                <label for="description" class="form-label">Review</label>
+                                <form action="{{route('admin.reviews.store')}}" method="post">
+                                    @csrf
+                                    <textarea class="form-control mb-3 @error('description') is-invalid @enderror" id="description" name="description" rows="3"></textarea>
+                                    @error('description')
+                                        <div class="text-danger">{{$message}}</div>
+                                    @enderror
+                                    <input type="hidden" name="post_id" value="{{$post->id}}">
+                                    <button class="btn btn-primary container">Send</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="card col-lg-3 list">
+                    <div class="card col-lg-3">
                         <div class="row container-fulid card-body">
-                            <div class="col-sm-12">
+                            <h5 class="text-primary">Posts</h5>
+                            <div class="col-sm-12 list pt-3">
                                 <ul class="list-unstyled">
                                     @foreach($posts_category as $post_category)
                                     <li>
@@ -37,6 +46,15 @@
                                             </div>
                                         </a>
                                     </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            
+                            <div class="col-sm-12 mt-5">
+                                <h5 class="text-primary">Reviews</h5>
+                                <ul class="list-group list">
+                                    @foreach($reviews as $review)
+                                    <li class="list-group-item">{{$review->description}}</li>
                                     @endforeach
                                 </ul>
                             </div>
