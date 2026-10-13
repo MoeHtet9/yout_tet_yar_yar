@@ -11,6 +11,7 @@ Route::group(['prefix' => 'admin','as' => 'admin.'], function () {
     Route::resource('latters', App\Http\Controllers\Admin\LatterController::class);
     Route::resource('knowledges', App\Http\Controllers\Admin\KnowledgeController::class);
     Route::resource('reviews', App\Http\Controllers\Admin\ReviewController::class);
+    Route::resource('users', App\Http\Controllers\Admin\UserController::class);
 });
 
 Auth::routes();
